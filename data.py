@@ -39,7 +39,7 @@ def load_artifacts():
 
 def generate_retention_advice(city, contract, tenure, bill, calls, prob):
     """Generate executive retention actions using Gemini 2.5 Flash or local rule engine."""
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = os.environ.get("SALEM199API")
     if api_key:
         try:
             from google import genai
